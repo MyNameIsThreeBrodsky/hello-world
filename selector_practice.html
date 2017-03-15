@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+      <title>
+        Selector Practice!
+      </title>
+      <style media="screen">
+      a {
+        background-color: blue;
+        color: white;
+      }
+      a:active {
+        background-color: red;
+        colro: white;
+        padding: 1em;
+      }
+      a:visited{
+        color: white;
+        background: purple;
+      }
+      nav a:last-child {
+        margin-left: 20px;
+      }
+      nav a:first-child {
+        margin-left: 50px;
+      }
+        p {
+          font-family: sans-serif;
+          color: red;
+        }
+        p {
+          /* overriding the previous rule for 'p'*/
+          color: blue;
+        }
+        p span {
+          font-weight: bold;
+          color: black;
+        }
+        .content p:nth-child(2) {
+          border: 1px solid orange;
+        }
+        p:hover {
+          background-color: yellow;
+          color: black;
+        }
+        /* rule for a class */
+        .specialParagraph {
+          margin: 100px;
+        }
+        /* rule for an ID */
+        #secondParagraph {
+          margin: 0;
+          color: pink;
+        }
+        #secondParagraph:hover {
+          color: red;
+        }
+        ul {
+          margin-left: 100px;
+        }
+        /*li {
+          color: blue;
+        }*/
+        li {
+          color: blue;
+        }
+        ul ol li {
+          color: red;
+        }
+        #clientSpecial {
+          color: green;
+          font-weight: bold;
+        }
+        #clientSpecial:after {
+          content: "";
+          font-weight: bold;
+          font-size: 45px;
+          color: green;
+          display: block;
+          width: 10px;
+          height: 10px;
+          background-color: green;
+        }
+        #clientSpecial:before {
+          content: "";
+          display: block;
+          width: 10px;
+          height: 10px;
+          background-color: green;
+        }
+        </style>
+  </head>
+  <body>
+
+    <h1>
+      Selectors!
+    </h1>
+
+    <nav>
+      <a href="inline.html">inline</a>
+      <br>
+      <a href="http://www.paperfishdesigns.com">paperfishdesigns</a>
+    </nav>
+
+    <div class="content">
+          <p style="font-family: monospace;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <span>minim veniam, quis</span> nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p id="secondParagraph" class="specialParagraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <span>reprehenderit</span> in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p class="specialParagraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+
+      <ul>
+        <li id="clientSpecial">
+          list item 1
+        </li>
+          <ol>
+            <li>
+              sublist item 1
+            </li>
+          </ol>
+        <li>
+          list item 2
+        </li>
+        <ol>
+          <li>
+            sublist item 2
+          </li>
+        </ol>
+      </ul>
+
+</body>
+</html>
