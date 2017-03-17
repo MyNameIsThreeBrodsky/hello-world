@@ -1,0 +1,104 @@
+body {
+  height: 500px;
+  background-color: red;
+  background-image: url(img/ep_naturalwhite_360.png);
+  background-repeat: no-repeat;
+  background-position: 20% 20%;
+  /*shorthand below*/
+  background: transparent url(img/ep_naturalwhite_360.png) repeat top left;
+  font-family: sans-serif;
+  font-family: serif;
+  font-family: monospace;
+  font-family: cursive;
+  font-family: fantasy;
+  font-family: system-ui;
+  font-family: Helvetica, Verdana, sans-serif;
+  font-family: "Gill Sans", serif;
+  /* use quotes if space in the name of the font */
+  font-family: Arial, Verdana;
+  /* check google fonts */
+  /* font family, font weight, font style, font size */
+}
+h1 {
+  background: black;
+  color: white;
+  font-family: Serif;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+  border-width: 1px 2px 3px 4px;
+  border-style: solid;
+  border-color: lightgreen;
+  border-width: 2px 4px;
+  border-width: 3px 1px 6px;
+  /* shorthand ..it can only have one value. these are incrimental changes*/
+  border: 1px solid blue;
+  border-left: 4px solid red;
+  border-left-style: dashed;
+
+  border-radius: 5px 5px 5px 5px;
+  border-top-left-radius: 10px;
+
+}
+p {
+  margin: 18px 40px;
+  padding: 29px;
+  text-indent: 35px;
+  letter-spacing: 2px;
+  line-height: 1.4em;
+}
+.emptyImage {
+  width: 40px;
+  height: 40px;
+  background-color: orange;
+  display: inline-block;
+  float: right;
+}
+.clearFix {
+  clear: both;
+}
+.textEffects {
+  text-align: right;
+  text-align: left;
+  text-align: justify;
+}
+.textEffects a {
+  text-decoration: none;
+  /* this changes the apperance of all the links where defined */
+}
+.selectedText {
+  text-decoration: underline;
+  text-decoration: line-through;
+  text-decoration: none;
+  /* none takes away the line under a link */
+  text-decoration: overline;
+  text-transform: uppercase;
+}
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin-left: 2em; /* 2 x font size set in body */
+  margin-left: 69px; /* margin plus padding to make list flush with paragraph */
+  margin-bottom: 50px;
+  list-style-type: square;
+  list-style-type: none;
+  list-style-type: circle;
+}
+.overflowTest {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  overflow: hidden; /* when you have too much text to fit in a container it stays hidden */
+  overflow: auto; /* creates scroll bar */
+  overflow-y: scroll;
+  margin-bottom: 100px;
+}
+.overflowTest p {
+  margin: 5px;
+
+}
